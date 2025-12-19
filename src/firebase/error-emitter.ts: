@@ -1,0 +1,41 @@
+'use client';
+
+import { FirestorePermissionError } from '@/firebase/errors';
+
+type Events = {
+  'permission-error': (error: FirestorePermissionError) => void;
+};
+
+type EventName = keyof Events;
+
+class TypedEventEmitter {
+  private listeners: { [K in EventName]?: ((...args: Parameters<Events[K]>) => void)[] } = {};
+
+  on<E extends EventName>(event: E, callback: Events[E]): void {
+    if (!this.listeners[event]) {
+      this.listeners[event] = [];
+    }
+    this.listeners[event]!.push(callback as any);
+  }
+
+  off<E extends EventName>(event: E, callback: Events[E]): void {
+    if (!this.listeners[event]) {
+      return;
+    }
+    this.listeners[event] = this.listeners[event]!.filter(
+      (listener) => listener !== (callback as any)
+    );
+  }
+
+  emit<E extends EventName>(event: E, ...args: Parameters<Events[E]>): void {
+    if (!this.listeners[event]) {
+      return;
+    }
+    this.listeners[event]!.forEach((listener) => {
+      listener(...args);
+    });
+  }
+}
+
+// تصدير نسخة موحدة لكل التطبيق
+export const errorEmitter = new TypedEventEmitter();
