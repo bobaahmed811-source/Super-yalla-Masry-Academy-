@@ -1,0 +1,22 @@
+{
+  "placeholderImages": [
+    {
+      "id": "cat-guide",
+      "imageUrl": "https://placehold.co/400x400/0d284e/ffd700?text=Basbas+Cat",
+      "description": "القط بسبس - مرشدكم في مملكة الصغار",
+      "imageHint": "A friendly cartoon Egyptian Mau cat wearing a small pharaonic collar"
+    },
+    {
+      "id": "coloring-tut",
+      "imageUrl": "https://placehold.co/800x600/ffffff/000000?text=King+Tut+Drawing",
+      "description": "رسمة الملك توت عنخ آمون للتلوين",
+      "imageHint": "A black and white line art drawing of King Tutankhamun mask for kids coloring"
+    },
+    {
+      "id": "animal-lion",
+      "imageUrl": "https://placehold.co/400x400/0d284e/ffd700?text=Lion",
+      "description": "صورة الأسد",
+      "imageHint": "A majestic lion icon"
+    }
+  ]
+}
