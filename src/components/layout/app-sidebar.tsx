@@ -6,7 +6,6 @@ import {
   BookCopy,
   MessageSquare,
   Settings,
-  GraduationCap
 } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
@@ -20,13 +19,11 @@ import {
 } from '@/components/ui/sidebar';
 import { Separator } from '@/components/ui/separator';
 
-// تحديث الروابط لتشير إلى المسارات الفعلية (تأكدي من وجود هذه المجلدات في app)
 const menuItems = [
-  { href: '/dashboard', label: 'لوحة التحكم', icon: LayoutDashboard },
-  { href: '/courses', label: 'كل الدورات', icon: BookCopy },
-  { href: '/kids', label: 'مملكة الأطفال', icon: GraduationCap }, // أضفت هذا الرابط لأنه أساسي في مشروعك
-  { href: '/messages', label: 'الرسائل', icon: MessageSquare },
-  { href: '/settings', label: 'الإعدادات', icon: Settings },
+  { href: '/', label: 'لوحة التحكم', icon: LayoutDashboard },
+  { href: '#', label: 'جميع الدورات', icon: BookCopy },
+  { href: '#', label: 'الرسائل', icon: MessageSquare },
+  { href: '#', label: 'الإعدادات', icon: Settings },
 ];
 
 export function AppSidebar() {
@@ -36,9 +33,8 @@ export function AppSidebar() {
     <>
       <SidebarHeader>
         <div className="flex items-center gap-2 p-2">
-          {/* تغيير الشعار ليكون متوافقاً مع الهوية الملكية للأكاديمية */}
-          <BookOpenCheck className="size-6 text-yellow-500" />
-          <span className="text-lg font-bold font-headline text-[#0d284e]">يلا مصري</span>
+          <BookOpenCheck className="size-6 text-sidebar-primary" />
+          <span className="text-lg font-semibold font-headline text-gold-accent">Yalla Masry</span>
         </div>
       </SidebarHeader>
 
@@ -53,7 +49,7 @@ export function AppSidebar() {
               >
                 <Link href={item.href}>
                   <item.icon />
-                  <span>{item.label}</span>
+                  <span className="font-cairo">{item.label}</span>
                 </Link>
               </SidebarMenuButton>
             </SidebarMenuItem>
@@ -62,8 +58,8 @@ export function AppSidebar() {
       </div>
 
       <SidebarFooter>
-        <Separator className="my-2" />
-        <p className="text-[10px] text-sidebar-foreground/60 p-2 group-data-[collapsible=icon]:hidden font-sans">
+        <Separator className="my-2 opacity-20" />
+        <p className="text-xs text-sidebar-foreground/60 p-2 group-data-[collapsible=icon]:hidden font-cairo">
           © 2025 Yalla Masry Academy
         </p>
       </SidebarFooter>
