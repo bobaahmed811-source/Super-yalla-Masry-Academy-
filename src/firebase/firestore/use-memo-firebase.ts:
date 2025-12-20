@@ -1,0 +1,24 @@
+'use client';
+import { useMemo } from 'react';
+import {
+  DocumentReference,
+  Query,
+} from 'firebase/firestore';
+
+/**
+ * هوك مخصص لعمل Memoize لاستعلامات Firestore.
+ * يمنع إعادة تشغيل الاستعلامات مع كل إعادة بناء للمكون (Render)، 
+ * مما يحمي من الحلقات اللانهائية ويقلل استهلاك قراءات Firestore.
+ */
+export function useMemoFirebase<
+  T extends DocumentReference<any> | Query<any> | null
+>(factory: () => T, deps: React.DependencyList): T {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const memoized = useMemo(factory, deps);
+
+  if (memoized) {
+    // إضافة علامة تحقق للتأكد من أن الاستعلام مر عبر هذا الـ Hook
+    (memoized as any).__memo = true;
+  }
+  return memoized;
+}
