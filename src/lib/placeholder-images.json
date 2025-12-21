@@ -1,22 +1,139 @@
 {
   "placeholderImages": [
     {
+      "id": "instructor-1",
+      "description": "Portrait of a friendly female instructor, smiling, wearing a hijab",
+      "imageUrl": "https://images.unsplash.com/photo-1592621385612-4d7129426394?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2NTQzNjIwMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "instructor-2",
+      "description": "Portrait of another female instructor, professional look",
+      "imageUrl": "https://images.unsplash.com/photo-1690444963408-9573a17a8058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzbWlsaW5nJTIwd29tYW58ZW58MHx8fHwxNzY1NDg0MjAyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smiling woman"
+    },
+    {
+      "id": "instructor-3",
+      "description": "Portrait of a professional female instructor with glasses, warm smile",
+      "imageUrl": "https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjB3b21hbnxlbnwwfHx8fDE3NjU1MjM2ODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional woman"
+    },
+    {
+      "id": "book-cl1",
+      "description": "Cover of an old Islamic book with intricate patterns",
+      "imageUrl": "https://images.unsplash.com/photo-1564316915543-b36a51db1a04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxpc2xhbWljJTIwYm9va3xlbnwwfHx8fDE3NjU1NDgwODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "islamic book"
+    },
+    {
+      "id": "book-cl2",
+      "description": "Cover of a Tafsir book, classic design",
+      "imageUrl": "https://images.unsplash.com/photo-1590720478291-aaabf8d53c49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxxdXJhbiUyMGJvb2t8ZW58MHx8fHwxNzY1NTQ4MDg5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "quran book"
+    },
+    {
+      "id": "book-cl3",
+      "description": "Cover of a Hadith collection, simple and elegant",
+      "imageUrl": "https://images.unsplash.com/photo-1761475048666-ec46f9a5fd55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxpc2xhbWljJTIwc2NyaXB0dXJlfGVufDB8fHx8MTc2NTU0ODA4OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "islamic scripture"
+    },
+    {
+      "id": "user-avatar-1",
+      "description": "Default user avatar, a pharaoh icon",
+      "imageUrl": "https://images.unsplash.com/photo-1636377985931-898218afd306?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjU0ODExODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
       "id": "cat-guide",
-      "imageUrl": "https://placehold.co/400x400/0d284e/ffd700?text=Basbas+Cat",
-      "description": "القط بسبس - مرشدكم في مملكة الصغار",
-      "imageHint": "A friendly cartoon Egyptian Mau cat wearing a small pharaonic collar"
+      "description": "Cartoon pharaoh cat character",
+      "imageUrl": "https://images.unsplash.com/photo-1739513261094-ba34a1c9e307?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYXJ0b29uJTIwY2F0fGVufDB8fHx8MTc2NTY5ODM0MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cartoon cat"
     },
     {
       "id": "coloring-tut",
-      "imageUrl": "https://placehold.co/800x600/ffffff/000000?text=King+Tut+Drawing",
-      "description": "رسمة الملك توت عنخ آمون للتلوين",
-      "imageHint": "A black and white line art drawing of King Tutankhamun mask for kids coloring"
+      "description": "A coloring book style outline of Tutankhamun's mask.",
+      "imageUrl": "https://storage.googleapis.com/stedi-assets/yalla-masry/coloring-tut-outline.png",
+      "imageHint": "tutankhamun coloring"
     },
     {
-      "id": "animal-lion",
-      "imageUrl": "https://placehold.co/400x400/0d284e/ffd700?text=Lion",
-      "description": "صورة الأسد",
-      "imageHint": "A majestic lion icon"
+      "id": "animal-cat",
+      "description": "A cute cat",
+      "imageUrl": "https://images.unsplash.com/photo-1615497001839-b0a0eac3274c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjdXRlJTIwY2F0fGVufDB8fHx8MTc2NTg0MzY3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cute cat",
+      "metadata": {
+        "name": "قطة"
+      }
+    },
+    {
+      "id": "animal-dog",
+      "description": "A friendly dog",
+      "imageUrl": "https://images.unsplash.com/photo-1650062416746-3c7295e03426?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmcmllbmRseSUyMGRvZ3xlbnwwfHx8fDE3NjU4MTEzNzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "friendly dog",
+      "metadata": {
+        "name": "كلب"
+      }
+    },
+    {
+      "id": "animal-horse",
+      "description": "A majestic horse",
+      "imageUrl": "https://images.unsplash.com/photo-1542731367-c646d21238e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYWplc3RpYyUyMGhvcnNlfGVufDB8fHx8MTc2NTgxMTM3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "majestic horse",
+      "metadata": {
+        "name": "حصان"
+      }
+    },
+    {
+      "id": "animal-donkey",
+      "description": "A funny donkey",
+      "imageUrl": "https://images.unsplash.com/photo-1667070716162-0cb554c45f3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmdW5ueSUyMGRvbmtleXxlbnwwfHx8fDE3NjU4MTEzNzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "funny donkey",
+      "metadata": {
+        "name": "حمار"
+      }
+    },
+    {
+      "id": "animal-camel",
+      "description": "A desert camel",
+      "imageUrl": "https://images.unsplash.com/photo-1574545190184-d67b04202272?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkZXNlcnQlMjBjYW1lbHxlbnwwfHx8fDE3NjU4MTEzNzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "desert camel",
+      "metadata": {
+        "name": "جمل"
+      }
+    },
+    {
+      "id": "animal-duck",
+      "description": "A cute duckling",
+      "imageUrl": "https://images.unsplash.com/photo-1686483287041-5ba0fc488cb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjdXRlJTIwZHVja2xpbmd8ZW58MHx8fHwxNzY1ODExMzc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cute duckling",
+      "metadata": {
+        "name": "بطة"
+      }
+    },
+    {
+      "id": "animal-sheep",
+      "description": "A fluffy sheep",
+      "imageUrl": "https://images.unsplash.com/photo-1698345470411-4e9cb72d8284?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmbHVmZnklMjBzaGVlcHxlbnwwfHx8fDE3NjU4NjEwNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fluffy sheep",
+      "metadata": {
+        "name": "خروف"
+      }
+    },
+    {
+      "id": "animal-cow",
+      "description": "A spotted cow",
+      "imageUrl": "https://images.unsplash.com/photo-1721369944881-a4434bdfcc22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzcG90dGVkJTIwY293fGVufDB8fHx8MTc2NTg2MTA3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "spotted cow",
+      "metadata": {
+        "name": "بقرة"
+      }
+    },
+    {
+      "id": "animal-chicken",
+      "description": "A clucking chicken",
+      "imageUrl": "https://images.unsplash.com/photo-1543856967-ea9a54fd46a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjbHVja2luZyUyMGNoaWNrZW58ZW58MHx8fHwxNzY1ODYxMDcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "clucking chicken",
+      "metadata": {
+        "name": "فرخة"
+      }
     }
   ]
 }
