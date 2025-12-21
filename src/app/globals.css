@@ -2,83 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --background: 231 55% 95%;
-    --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 231 48% 48%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 231 48% 90%;
-    --secondary-foreground: 240 5.9% 10%;
-    --muted: 231 48% 90%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 16 100% 70%;
-    --accent-foreground: 240 5.9% 10%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 231 48% 88%;
-    --input: 231 48% 88%;
-    --ring: 231 48% 48%;
-    --radius: 0.5rem;
-    
-    /* Yalla Masry Official Colors */
-    --nile-blue: #0b4e8d;
-    --gold-accent: #FFD700;
-    --sand-ochre: #d6b876;
-    --nile-dark: #0d284e;
-  }
+:root {
+  --nile-dark: #001F3F; /* اللون النيلي العميق */
+  --gold-accent: #D4AF37; /* الذهبي الملكي */
+  --sand-ochre: #E2C591; /* لون الرمال */
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-[#0d284e] text-foreground antialiased;
-    font-family: 'El Messiri', sans-serif;
-  }
+body {
+  background-color: var(--nile-dark);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* --- Yalla Masry Custom Components --- */
-
-.kids-bg {
-    background: linear-gradient(180deg, #0d284e 0%, #1c4a8a 100%);
+/* ستايل العناوين الملكية */
+.royal-title {
+  color: var(--gold-accent);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Cairo', sans-serif; /* يفضل استخدام خط عربي عريض */
 }
 
-.kids-card {
-    background: linear-gradient(145deg, #186a99, #104c7d);
-    border: 2px solid #fde68a;
-    border-radius: 1.5rem;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
+/* ستايل الكروت (Dashboard Cards) */
+.dashboard-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--sand-ochre);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
 }
 
-.kids-card:hover {
-    transform: translateY(-8px) rotate(1deg);
-    box-shadow: 0 15px 35px rgba(253, 230, 138, 0.3);
+.dashboard-card:hover {
+  border-color: var(--gold-accent);
+  transform: translateY(-5px);
 }
 
-.royal-title { 
-    font-family: 'Cairo', sans-serif; 
-    font-weight: 900; 
-    color: var(--gold-accent); 
+/* أزرار التشغيل الأساسية */
+.cta-button {
+  background-color: var(--gold-accent);
+  color: var(--nile-dark);
+  font-weight: bold;
 }
 
-/* Dashboard & Stats */
-.stat-card {
-    background-color: #17365e;
-    border-bottom: 4px solid var(--sand-ochre);
-    transition: all 0.3s ease;
+.cta-button:hover {
+  background-color: var(--sand-ochre);
 }
 
-.stat-card:hover {
-    background-color: #23487f;
-    transform: translateY(-5px);
+/* شريط التقدم الملكي */
+.progress-bar-royal {
+  height: 12px;
+  background: #003366;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--gold-accent);
 }
 
-/* Utilities */
-.bg-nile-dark { background-color: #0d284e; }
+.progress-fill-royal {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold-accent), var(--sand-ochre));
+}
