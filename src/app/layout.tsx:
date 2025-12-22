@@ -1,19 +1,11 @@
-import type { Metadata } from "next";
-import "./globals.css";
-
-export const metadata: Metadata = {
-  title: "أكاديمية يلا مصري",
-  description: "تعلم اللهجة المصرية مع نوف",
-};
-
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
-    <html lang="ar" dir="rtl">
+    <html lang="ar">
       <body>{children}</body>
     </html>
-  );
+  )
 }
