@@ -4,20 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>أكاديمية يلا مصري - الرئيسية</title>
+
+    <script>
+        if (localStorage.getItem('userLoggedIn') === 'true') {
+            window.location.href = 'dashboard.html';
+        }
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="assets/style.css">
-</head>
-<body class="bg-[#061121] text-white flex items-center justify-center min-h-screen">
 
-    <div class="p-10 rounded-[40px] bg-black/40 backdrop-blur-md border border-amber-500/30 text-center max-w-xl">
-        <h1 class="text-5xl font-black text-amber-500 mb-6">أكاديمية يلا مصري</h1>
-        <p class="text-xl text-gray-300 mb-8">بوابتك الملكية لتعلم اللهجة المصرية والثقافة الفرعونية.</p>
+    <style>
+        body { font-family: 'Cairo', sans-serif; }
+        .hero-bg {
+            background: linear-gradient(rgba(6, 17, 33, 0.8), rgba(6, 17, 33, 0.8)), 
+                        url('https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="hero-bg min-h-screen flex items-center justify-center text-white text-center px-4">
+
+    <div class="relative z-20 flex flex-col items-center p-8 max-w-3xl rounded-[40px] bg-black/30 backdrop-blur-sm border border-white/10 shadow-2xl">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 text-[#d4af37]">
+            أهلاً بك في أكاديمية يلا مصري
+        </h1>
+        <p class="text-lg md:text-2xl text-amber-100/80 mb-8">
+            بوابتك لتعلم اللهجة المصرية الأصيلة واستكشاف كنوز الثقافة الفرعونية.
+        </p>
         
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="signup.html" class="bg-amber-500 text-black px-8 py-3 rounded-xl font-bold hover:scale-105 transition">ابدأ رحلتك</a>
-            <a href="login.html" class="border border-amber-500 text-amber-500 px-8 py-3 rounded-xl font-bold hover:bg-amber-500/10 transition">تسجيل الدخول</a>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center w-full">
+            <a href="signup.html" class="w-full sm:w-auto">
+                <button class="w-full bg-[#d4af37] text-[#061121] px-8 py-4 rounded-2xl font-black text-xl hover:scale-105 transition-transform shadow-lg shadow-amber-500/20">
+                    ابدأ رحلتك الآن
+                </button>
+            </a>
+            <a href="login.html" class="w-full sm:w-auto">
+                <button class="w-full border-2 border-[#d4af37] text-[#d4af37] px-8 py-4 rounded-2xl font-bold text-xl hover:bg-[#d4af37]/10 transition-all">
+                    تسجيل الدخول
+                </button>
+            </a>
         </div>
     </div>
 
