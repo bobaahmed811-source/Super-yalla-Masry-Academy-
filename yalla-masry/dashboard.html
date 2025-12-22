@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم - أكاديمية يلا مصري</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="bg-[#061121] text-white min-h-screen">
+
+    <nav class="bg-[#0f1c2e] border-b border-[#d4af37]/30 p-4 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-black text-[#d4af37]">أكاديمية يلا مصري</div>
+            <div class="flex items-center gap-6">
+                <div class="hidden md:flex items-center gap-2 bg-amber-500/10 px-4 py-2 rounded-full border border-amber-500/20">
+                    <i class="fas fa-coins text-[#d4af37]"></i>
+                    <span class="font-bold text-[#d4af37]">150 نقطة نيل</span>
+                </div>
+                <button onclick="logout()" class="text-gray-400 hover:text-red-500 transition-colors">
+                    <i class="fas fa-sign-out-alt text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <div class="lg:col-span-2 space-y-8">
+            <header class="royal-card p-8 relative overflow-hidden">
+                <div class="relative z-10">
+                    <h2 class="text-3xl font-black mb-2">صباح الفل يا بطل! 👋</h2>
+                    <p class="text-amber-100/70">مستعد تكمل رحلتك في تعلم اللهجة المصرية النهاردة؟</p>
+                </div>
+                <i class="fas fa-ankh absolute -left-4 -bottom-4 text-white/5 text-9xl transform -rotate-12"></i>
+            </header>
+
+            <section class="space-y-4">
+                <h3 class="text-xl font-bold flex items-center gap-2">
+                    <i class="fas fa-book-open text-[#d4af37]"></i> دروسك الحالية
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-[#0f1c2e] p-5 rounded-2xl border border-white/5 hover:border-[#d4af37]/50 transition-all cursor-pointer group">
+                        <span class="text-xs text-amber-500 font-bold mb-2 block text-amber-500/60 uppercase">المستوى الأول</span>
+                        <h4 class="text-lg font-bold mb-4 group-hover:text-[#d4af37]">التحيات والتعارف بالعامية</h4>
+                        <div class="w-full bg-gray-800 h-2 rounded-full overflow-hidden">
+                            <div class="bg-[#d4af37] h-full w-[60%]"></div>
+                        </div>
+                        <p class="text-left text-xs mt-2 text-gray-500">تم إنجاز 60%</p>
+                    </div>
+
+                    <div class="bg-[#0f1c2e] p-5 rounded-2xl border border-white/5 hover:border-[#d4af37]/50 transition-all cursor-pointer group">
+                        <span class="text-xs text-amber-500 font-bold mb-2 block text-amber-500/60 uppercase">ثقافة فرعونية</span>
+                        <h4 class="text-lg font-bold mb-4 group-hover:text-[#d4af37]">أسرار بناء الأهرامات</h4>
+                        <div class="w-full bg-gray-800 h-2 rounded-full overflow-hidden">
+                            <div class="bg-blue-500 h-full w-[20%]"></div>
+                        </div>
+                        <p class="text-left text-xs mt-2 text-gray-500">تم إنجاز 20%</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="space-y-8">
+            <div class="royal-card p-6 text-center">
+                <h3 class="text-sm font-bold text-gray-400 mb-4 uppercase">لقبك الحالي</h3>
+                <div class="w-24 h-24 bg-amber-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-[#d4af37] shadow-lg shadow-amber-500/10">
+                    <i class="fas fa-scroll text-3xl text-[#d4af37]"></i>
+                </div>
+                <p class="text-2xl font-black text-[#d4af37]">الكاتب الملكي</p>
+                <p class="text-xs text-gray-500 mt-2">باقي 50 نقطة للقب "الوزير"</p>
+            </div>
+
+            <div class="bg-[#0f1c2e] rounded-[30px] p-6 border border-white/5">
+                <h3 class="font-bold mb-6 flex items-center gap-2">
+                    <i class="fas fa-star text-[#d4af37]"></i> تحديات واحة القرآن
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3 text-sm text-gray-300">
+                        <i class="fas fa-check-circle text-green-500"></i> حفظ سورة الفاتحة
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-gray-300">
+                        <i class="far fa-circle text-gray-600"></i> سماع تفسير آية الكرسي
+                    </li>
+                </ul>
+                <button class="w-full mt-6 py-3 border border-[#d4af37]/30 rounded-xl text-sm font-bold hover:bg-[#d4af37]/10 transition-all">
+                    ادخل الواحة
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
