@@ -1,3 +1,19 @@
-import type { Metadata } from 'next'; import './globals.css'; import { Toaster } from '@/components/ui/toaster'; import { FirebaseClientProvider } from '@/firebase/client-provider'; import { FirebaseErrorListener } from '@/components/FirebaseErrorListener';
-export const metadata: Metadata = { title: { template: '%s | Yalla Masry Academy', default: 'Yalla Masry Academy - The Royal Way for Women & Children to Learn Egyptian Arabic', }, description: 'The premier online academy for women and children to master Egyptian Colloquial Arabic with expert female tutors.', keywords: ['Learn Egyptian Arabic for women', 'Egyptian Colloquial Arabic for children', 'يلا مصري'], openGraph: { title: 'Yalla Masry Academy', description: 'The fun, safe, and effective way for women and children to master the Egyptian dialect.', type: 'website', url: '', siteName: 'Yalla Masry Academy', }, metadataBase: new URL(''), manifest: '/manifest.json', };
-export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) { return ( <html lang="en" dir="ltr"> <head> <link rel="preconnect" href="" /> <link rel="preconnect" href="" crossOrigin="anonymous" /> <link href="" rel="stylesheet" /> <meta name="theme-color" content="#0d284e" /> </head> <body> <FirebaseClientProvider> <FirebaseErrorListener /> <main> {children} </main> <Toaster /> </FirebaseClientProvider> </body> </html> ); }
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "أكاديمية يلا مصري",
+  description: "تعلم اللهجة المصرية مع نوف",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="ar" dir="rtl">
+      <body>{children}</body>
+    </html>
+  );
+}
