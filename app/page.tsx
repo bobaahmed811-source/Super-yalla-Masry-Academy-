@@ -7,19 +7,19 @@ export default function Home() {
       <div className="z-10 text-center space-y-8 max-w-4xl">
         <h1 className="text-6xl md:text-8xl font-black text-amber-500 drop-shadow-[0_5px_15px_rgba(245,158,11,0.4)]">
           أكاديمية يلا مصري
+          <Sparkles className="inline-block mr-2 text-amber-300" />
         </h1>
         <p className="text-xl md:text-2xl text-gray-300 font-light leading-relaxed">
           تعلم اللهجة المصرية، استكشف الحضارة مع رحلة "نوف"، <br/>وعش مغامرات واحة القرآن بالذكاء الاصطناعي.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-10">
-          {/* الربط بصفحة الأهداف */}
           <Link href="/goals" className="w-full sm:w-auto bg-amber-500 hover:bg-white text-black font-black py-4 px-12 rounded-2xl transition-all shadow-xl hover:scale-105 text-center text-xl">
             ابدأ رحلتك الملكية الآن 🚀
           </Link>
           
-          <Link href="/contact" className="w-full sm:w-auto border-2 border-amber-500 text-amber-500 hover:bg-amber-500/10 font-bold py-4 px-12 rounded-2xl transition-all text-center text-xl">
-            تواصل معنا
+          <Link href="/onboarding" className="w-full sm:w-auto border-2 border-amber-500 text-amber-500 hover:bg-amber-500/10 font-bold py-4 px-12 rounded-2xl transition-all text-center text-xl">
+            تعرف علينا
           </Link>
         </div>
       </div>
